@@ -1,7 +1,7 @@
 .bg-custom {
-    background-color: #10001a;
+    background-color: #5711A6;
     background-image: url(img/axiom-pattern.png);
-    color: #fff;
+    color: #ffffff;
     z-index: 999;
 }
 
@@ -48,25 +48,36 @@
 
 header {
     padding: 70px;
-    padding-bottom: 120px;
-    background-image: linear-gradient(#10001a, #10001a50);
+    padding-bottom: 110px;
+    background-color: #5611a600;
+    border-bottom: 6px solid #470e88;
 }
     header h1 {
         font-size: 100px;
+        text-shadow: -1px 1px 2px #2b0853;
     }
+        span {
+            color: #fb5607;
+        }
 
 .container {
     padding: 50px;
 }
     .container section {
-        background-color: #10001a;
+        background-color: #8338ec;
         /*background-color: #00257481;*/
-        background-image: linear-gradient(#2e312f36 15%, #00257460, #302e3136 75%);
-        box-shadow: -10px 10px 15px #0000006b;
+        background-image: linear-gradient(#5611a617 15%, #8338ec, #5711A617 75%);
+        box-shadow: -10px 10px 15px #00000027;
     }
         .container h2 {
             font-size: 50px;
             padding-bottom: 20px;
+            color: #ff2bb8;
+            text-shadow: -1px 1px 2px #2b0853;
+        }
+
+        .wh {
+            color: #fff;
         }
 
         hr.line {
@@ -77,15 +88,21 @@ header {
     
     .container #about {
         padding: 80px;
-        padding-bottom: 300px;
+        padding-bottom: 100px;
     }
         #about hr {
             width: 95%;
         }
 
+        .tblr {
+            width: 700px;
+            height: auto;
+        }
+
         #about p {
             padding-left: 60px;
             padding-right: 60px;
+            font-weight: 500;
         }
 
         #about button {
@@ -95,25 +112,26 @@ header {
             font-weight: bold;
             font-size: 14px;
             border-radius: 20px;
-            color: #fff;
-            margin-left: 300px;
+            color: #2b2b2b;
+            margin-left: 350px;
             margin-top: 50px;
-            background-color: #660080;
-            border-color: #66008063;
+            background-color: #ffbe0b;
+            border-color: #cfbb00;
         }
 
         #about button:hover {
             border: none;
-            background-color:#1d0030;
+            background-color:#470e88;
+            color: #fff;
         }
 
     .container #dev {
         padding-top: 80px;
-        padding-bottom: 300px;
+        padding-bottom: 100px;
     }
     .container #misc {
         padding-top: 80px;
-        padding-bottom: 200px;
+        padding-bottom: 150px;
     }
         #misc h2, #dev h2 {
             padding-left: 60px;
@@ -125,30 +143,30 @@ ul {
 }
 
 #dev ul {
+    display: flex;
     justify-content: center;
 }
 
 #dev li {
     display: inline-block;
-    width: 140px;
+    width: 170px;
     height: 500px;
-    border: 10px solid #eedbf87e;
-    margin-left: 1px;
-    margin-right: 1px;
+    border: 10px solid #0000004f;
+    margin-right: 20px;
 }
 
     #dev li img {
         position: absolute;
-        width: 120px;
+        width: 150px;
         height: 480px;
         object-fit: cover;
         object-position: 50% 0%;
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
     #dev li button {
         position: absolute;
-        width: 120px;
+        width: 150px;
         height: 480px;
         background-color: #000;
         border: none;
@@ -158,6 +176,9 @@ ul {
         opacity: 0;
     }
 
+    #dev li:hover {
+        border: 10px solid #ffffffe1;
+    }
     #dev li:hover button {
         opacity: 0.8;
         cursor: pointer;
@@ -171,7 +192,7 @@ ul {
         display: inline-block;
         width: 230px;
         height: 230px;
-        border: 10px solid #eedbf87e;
+        border: 10px solid #0000004f;
         border-radius: 200px;
         margin-left: 40px;
         margin-right: 40px;
@@ -184,6 +205,7 @@ ul {
         border-radius: 200px;
         object-fit: cover;
         object-position: 50% 50%;
+        opacity: 0.9;
     }
 
     #misc li button {
@@ -197,6 +219,10 @@ ul {
         font-weight: bold;
         text-transform: uppercase;
         opacity: 0;
+    }
+
+    #misc li:hover {
+        border: 10px solid #ffffffe1;
     }
 
     #misc li:hover button {
@@ -222,6 +248,7 @@ ul {
 
 footer {
     padding: 50px;
-    background-color: #10001a;
+    background-color: #5611a600;
+    border-top: 6px solid #470e88;
     text-align: center;
 }
